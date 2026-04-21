@@ -7,3 +7,14 @@
 
 3. Run:
    python app.py
+
+folder structure:-
+
+tourism-chatbot/
+│
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── requirements.txt
