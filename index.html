@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Travel Assistant</h3>
+        </div>
+
+        <div id="chat-box">
+            <div class="bot-msg">Hello! How can I help you with your travel plans today?</div>
+        </div>
+
+        <div id="options-container" class="options-area">
+            <button class="opt-btn" onclick="sendOption('destinations')">View Destinations</button>
+            <button class="opt-btn" onclick="sendOption('hotels')">View Hotels</button>
+            <button class="opt-btn" onclick="sendOption('packages')">Travel Packages</button>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
